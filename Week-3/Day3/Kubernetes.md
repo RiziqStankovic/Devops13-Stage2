@@ -125,6 +125,15 @@ kubectl describe pod nama pod
 
 disini saya akan deploy simple app micro services
 
+```
+git clone https://github.com/toolkeet/dumbways-docker-microservices.git
+```
+
+kmudian deploy masuk ke direc micro nya 
+
+```
+kubectl apply -f kubernetes.yml
+```
 
 ![img](assets/deploy%20simple%20app.png)
 
