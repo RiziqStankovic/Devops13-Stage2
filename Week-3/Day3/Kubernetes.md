@@ -1,7 +1,24 @@
 # KUBERNETES
 
-# Kubernetes Installation
+![img](assets/kube.jpg)
 
+Master Node
+Master node adalah server utama yang mengatur semua operasi cluster menggunakan tiga komponen, yaitu kube-apiserver, kube-controller-manager, kube-scheduler dan etcd.
+
+Di bawah ini adalah penjelasan fungsinya:
+
+kube-apiserver: validasi dan konfigurasi data untuk objek API, yaitu pod, services, volume, dan lainnya.
+kube- controller-manager: melakukan monitor cluster agar sesuai dengan konfigurasi data objek di dalam node.  
+kube-scheduler: menambah objek baru ke node. Misalnya, menginstall pod ke node tertentu.
+Etcd: ruang penyimpanan key value konfigurasi data cluster.
+Worker Node
+Worker node adalah semua server non master yang berfungsi untuk menjalankan dua komponen, yaitu kubelet dan kube-proxy. Begini penjelasan fungsi komponennya:
+
+Kubelet: komponen untuk memastikan kontainer beroperasi di dalam objek Pod.
+Kube-proxy: memelihara network rules dan meneruskan koneksi ke suatu host.
+Docker image: file dari aplikasi Docker yang berfungsi untuk membuat kontainer. 
+
+# Kubernetes Installation
 
 
 
