@@ -1,5 +1,8 @@
 # 0. server 1cpu 2mem (exporter, promehteus, grafana) 
 
+![img](assets/ansible.png)
+
+
 definisi
 Ansible merupakan salah satu alat open source yang digunakan untuk mengotomasi proses setup yang dilakukan secara berulang pada banyak server menjadi sekali proses saja.
 
@@ -258,7 +261,7 @@ docker ps -a
 
         ziq.studentdumbways.my.id:
           domains:
-            - cadvisor.ziq.studentdumbways.my.id
+            - domainnamenya.ziq.studentdumbways.my.id
           upstreams:
             - { backend_address: 103.134.154.254, backend_port: 8080 }
           ssl: true
@@ -271,7 +274,7 @@ docker ps -a
 
 ![img](assets/ansi10.png)
 
-
+#  Hasil Reverse Proxynya
 
    # - node-exporter.name.studentdumbways.my.id (node exporter)
 
