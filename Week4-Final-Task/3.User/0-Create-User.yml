@@ -1,0 +1,26 @@
+- hosts: 'host kalian'
+  gather_facts: no
+  become: true
+  vars:
+    name:
+  tasks:
+       - name: 'Membuat User'
+         user:
+           name: nginx
+           password: $6$NeGscLr8$TMTc2lNbjT0W8EL1oYL/.BPtVRgEi3kmkJ.l9RuhmT3VnGJXOGuiCLnS/7oMcZpEuHsSevyJbdx3l8GxfZ1.n0
+           groups: sudo
+           shell: /bin/bash
+           system: no
+           createhome: yes
+           home: /home/nginx
+
+       - name: 'Merubah Passwd Authen'
+         lineinfile:
+           path: /etc/ssh/sshd_config
+           regexp: 'PasswordAuthentication no'
+           line: PasswordAuthentication yes
+          
+       - name: 'Mengulang system sshd'
+         systemd:
+           name: sshd
+           state: reloaded

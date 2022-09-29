@@ -1,0 +1,13 @@
+    [all]
+    103.187.147.66 ansible_user=ziq
+    103.189.235.121 ansible_user=ziq
+    103.189.235.96 ansible_user=ziq
+
+    [app]
+    103.187.147.66 ansible_user=ziq
+
+    [nginx]
+    103.189.235.121 ansible_user=ziq
+
+    [jenkins]
+    103.189.235.96 ansible_user=ziq
